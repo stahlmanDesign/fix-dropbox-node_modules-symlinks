@@ -22,20 +22,16 @@ all the rest, you have actual dereferenced files that don't work.
 Usage
 -----
 
-**Pause or turn off Dropbox on the machine you run this on.**
+1. **Pause or turn off Dropbox on the machine you run this on.**
+- Type in the terminal `fix-dropbox-node_modules-symlinks`
+- If dereferced file(s) exist, you can overwrite them by adding ` --overwrite`
+    - `fix-dropbox-node_modules-symlinks --overwrite`
+    
+Notes
+- Run on project source directory with package.json and node_modules.
 
-```
-
-  fix-dropbox-node_modules-symlinks@0.1.0
-
-    Run on project source directory with package.json and node_modules.
-
-    options:
-
-      --overwrite Overwrite existing symlinks.
-
-```
-
+Options:
+  `--overwrite` Overwrite existing symlinks.
 
 License
 -------
